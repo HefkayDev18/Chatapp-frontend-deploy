@@ -3,7 +3,8 @@ import { Box, Input, Button, HStack, VStack, Text, Avatar, Heading, Flex } from 
 import { io } from "socket.io-client";
 import FormatTime from "../functions/FormatTime";
 
-const socket = io("http://localhost:4000");
+// const socket = io("http://localhost:4000"); // dev environment
+const socket = io("https://chatapp-backend-zsjs.onrender.com"); //Live
 
 
 const ChatBox = () => {
